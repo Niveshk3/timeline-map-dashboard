@@ -7,7 +7,6 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import TimelineSlider from "./TimelineSlider";
 import { fetchWeatherData } from "../utils/api";
 
 const MapEvents = ({ onClick, onDoubleClick }) => {
@@ -106,6 +105,7 @@ const MapComponent = ({ dataSource }) => {
   return (
     <>
       <MapContainer
+        className="map-container"
         center={[20.59, 78.96]}
         zoom={5}
         style={{ height: "80vh", width: "100%" }}
@@ -138,15 +138,6 @@ const MapComponent = ({ dataSource }) => {
           />
         )}
       </MapContainer>
-
-      <TimelineSlider
-        max={335}
-        value={timelineIndex}
-        onChange={setTimelineIndex}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-      />
-
       <div className="legend">
         <strong>Legend:</strong>
         <div><span style={{ color: "red" }}>⬤</span> &lt; 10</div>
