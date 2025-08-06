@@ -49,7 +49,7 @@ const MapComponent = ({ dataSource }) => {
     const saved = localStorage.getItem("timelineIndex");
     return saved ? parseInt(saved) : 0;
   });
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying] = useState(false);
   const intervalRef = useRef(null);
 
   // Save to localStorage
