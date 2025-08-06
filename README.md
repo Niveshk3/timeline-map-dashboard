@@ -14,6 +14,19 @@ An interactive map dashboard built with React and Leaflet. Draw polygons, view h
 
 🚀 Getting Started
 
-```bash
+✅ A. Setup & Run Instructions
+git clone https://github.com/Niveshk3/timeline-map-dashboard.git
+cd timeline-map-dashboard
 npm install
 npm start
+✅ B. Summary of Libraries Used
+- react-leaflet
+- react-leaflet-draw
+- rc-slider
+- axios
+- leaflet
+- Open-Meteo API
+✅ C. Remarks on Design/Development
+- Built with a focus on interactivity and temporal geospatial analysis
+- Supports polygon labeling, dynamic color mapping, and animation
+- Designed for responsiveness and clarity in UX
